@@ -1,2 +1,30 @@
-venv/
+# Ortam değişkenleri — ASLA commit etme!
 .env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+
+# Sanal ortam
+venv/
+env/
+.venv/
+
+# Veritabanı
+*.db
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Render / Deployment
+*.log

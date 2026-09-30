@@ -1,9 +1,8 @@
-from flask import Flask
-app = Flask(__name__)
+﻿# run.py - Sunucuyu baslatan giris noktasi
+from app import create_app
 
-@app.route('/')
-def anasayfa():
-    return '<h1>Metæyes ai calisiyor!</h1>'
+# gunicorn "run:app" ile bu degiskeni arar
+app = create_app()
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=5000, debug=app.config['DEBUG'])
